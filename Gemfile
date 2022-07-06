@@ -9,9 +9,16 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.1"
-
 gem "jekyll-theme-hydejack", "~> 9.1"
 
+
+gem "jekyll-coffeescript"
+gem "jekyll-default-layout"
+gem "jekyll-github-metadata"
+gem "jekyll-optional-front-matter"
+gem "jekyll-readme-index"
+gem "jekyll-titles-from-headings"
+gem "jekyll-relative-links"
 
 # gem "github-pages", group: :jekyll_plugins
 # gem "jekyll-include-cache", group: :jekyll_plugins
