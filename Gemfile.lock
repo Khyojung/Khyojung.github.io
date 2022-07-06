@@ -100,7 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   duktape
-  jekyll (~> 4.2.2)
+  jekyll (~> 4.1)
   jekyll-compose
   jekyll-default-layout
   jekyll-feed
