@@ -52,8 +52,8 @@ menu:
     url:               /page/
   - title:             Paper
     url:               /paper/
-  - title:             Test
-    url:               /test/
+  - title:             Study
+    url:               /study/
   - title:             About
     url:               /about/
 
