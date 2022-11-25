@@ -2,6 +2,6 @@
 layout: post
 title: Paper
 description: >
-  세미나 진행 논문 기록
+  블로그 작성 글 모음
 grouped: true
 ---
