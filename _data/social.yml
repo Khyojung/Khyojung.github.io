@@ -208,5 +208,5 @@ download:
   icon: icon-box-add
 Notion:
   name: Notion
-  icon: icon-paypal
+  icon: home
   prepend: "https://www.notion.so/"
