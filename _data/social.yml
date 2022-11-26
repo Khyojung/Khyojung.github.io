@@ -209,4 +209,4 @@ download:
 Notion:
   name: Notion
   icon: home
-  prepend: "https://www.notion.so/"
+ # prepend: "https://www.notion.so/"

@@ -56,8 +56,6 @@ menu:
     url:               /study/
   - title:             About
     url:               /about/
-  - title:             Notion
-    url:               /https://www.notion.so/Main-Page-639f4a7d84884f91813d41c79fa54c7a/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
