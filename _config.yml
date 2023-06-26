@@ -48,12 +48,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Page
-    url:               /page/
   - title:             Paper
     url:               /paper/
   - title:             Study
     url:               /study/
+  - title:             Project
+    url:               /project/
   - title:             About
     url:               /about/
 
