@@ -2,7 +2,6 @@
 layout: post
 title: Dimensionality Reduction
 description: >
-    Dimensionality Reduction
     내용과 그림은 핸즈온머신러닝 책을 참고하였습니다.
 sitemap: false
 hide_last_modified: true
@@ -26,12 +25,17 @@ hide_last_modified: true
 - 고차원 공간에 있는 훈련 샘플을 저차원 공간으로 그대로 옮기는 것이다.
 - 모든 훈련 샘플이 고차원 공간 안의 저차원 부분공간에 놓여있다.
 - 예시 : 그림에는 원모양을 띈 3차원 데이터 셋이있다.
+
 <img src="/assets/img/blog/dimensionality_reduction/IMG_20925B427AFA-1.jpeg" width = "50%" height = "50%">
+
 - 모든 훈련 샘플이 거의 평면 형태로 놓여있고, 여기에서 모든 훈련 샘플을 이 부분공간에 수직으로 투영하면 밑의 사진과 같은 데이터셋을 얻을 수 있다.
+
 <img src="/assets/img/blog/dimensionality_reduction/IMG_556BE05C4340-1.jpeg" width = "50%" height = "50%">
 
 - 하지만 스위스롤 같은 데이터가 있을 경우에 투영 기법이 항상 통하는 것은 아니다.
+
 <img src="/assets/img/blog/dimensionality_reduction/1.png" width = "50%" height = "50%">
+
 <img src="/assets/img/blog/dimensionality_reduction/22.png" width = "50%" height = "50%">
 
 - 왼쪽 사진이 스위스롤 데이터를 그냥 투영기법을 사용해서 투영했을 때의 모습이다. 
@@ -47,11 +51,12 @@ hide_last_modified: true
     2. 처리해야할 작업이 저차원의 매니폴드 공간에 표현되면 더 간단해진다.
     
 **매니폴드 학습의 한계**
-<img src="/assets/img/blog/dimensionality_reduction/2차원.png" width = "50%" height = "50%">
+
+<img src="/assets/img/blog/dimensionality_reduction/2men.png" width = "50%" height = "50%">
 
 - 위의 데이터 셋에는 3차원에서는 경계를 나누기 어렵지만 2차원에서는 뚜렷한 경계를 볼 수 있다.
 
-<img src="/assets/img/blog/dimensionality_reduction/3차원.png" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/3men.png" width = "50%" height = "50%">
 
 - 하지만 해당 데이터셋에서는 차원 축소를 한 경우 오히려 더 경계를 구분하기 어려운 것을 알 수 있다. 
 
