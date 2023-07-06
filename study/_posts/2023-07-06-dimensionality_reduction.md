@@ -26,13 +26,13 @@ hide_last_modified: true
 - 고차원 공간에 있는 훈련 샘플을 저차원 공간으로 그대로 옮기는 것이다.
 - 모든 훈련 샘플이 고차원 공간 안의 저차원 부분공간에 놓여있다.
 - 예시 : 그림에는 원모양을 띈 3차원 데이터 셋이있다.
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/IMG_20925B427AFA-1.jpeg" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/IMG_20925B427AFA-1.jpeg" width = "50%" height = "50%">
 - 모든 훈련 샘플이 거의 평면 형태로 놓여있고, 여기에서 모든 훈련 샘플을 이 부분공간에 수직으로 투영하면 밑의 사진과 같은 데이터셋을 얻을 수 있다.
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/IMG_556BE05C4340-1.jpeg" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/IMG_556BE05C4340-1.jpeg" width = "50%" height = "50%">
 
 - 하지만 스위스롤 같은 데이터가 있을 경우에 투영 기법이 항상 통하는 것은 아니다.
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/1.png" width = "50%" height = "50%">
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/22.png" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/1.png" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/22.png" width = "50%" height = "50%">
 
 - 왼쪽 사진이 스위스롤 데이터를 그냥 투영기법을 사용해서 투영했을 때의 모습이다. 
 - 고차원 공간에서 뒤틀리거나 휘어진 2D 모양의 데이터셋을 매니폴드라고 부른다.
@@ -47,11 +47,11 @@ hide_last_modified: true
     2. 처리해야할 작업이 저차원의 매니폴드 공간에 표현되면 더 간단해진다.
     
 **매니폴드 학습의 한계**
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/2차원.png" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/2차원.png" width = "50%" height = "50%">
 
 - 위의 데이터 셋에는 3차원에서는 경계를 나누기 어렵지만 2차원에서는 뚜렷한 경계를 볼 수 있다.
 
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/3차원.png" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/3차원.png" width = "50%" height = "50%">
 
 - 하지만 해당 데이터셋에서는 차원 축소를 한 경우 오히려 더 경계를 구분하기 어려운 것을 알 수 있다. 
 
@@ -60,7 +60,7 @@ hide_last_modified: true
 - 저차원의 초평면에 훈련 세트를 투영하기 전에 먼저 올바른 초평면을 선택해야한다.
 
 
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/IMG_99EA0CE5C262-1.jpeg" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/IMG_99EA0CE5C262-1.jpeg" width = "50%" height = "50%">
 
 - 다른 방향으로 투영하는 것보다 분산이 최대로 보존되는 축을 선택하는 것이 정보가 가장 적게 손실된다. 
 - ***원본 데이터셋과 투영된 것 사이의 평균 제곱 거리를 최소화하는 축***
@@ -108,7 +108,7 @@ d = np.argmax(cumsum >= 0.95) + 2
     2. 국부적인 관계가 가장 잘 보존되는 훈련 세트의 저차원 표현을 찾음
 - 잡음이 많지 않은 경우 꼬인 매니폴드를 펼치는데 잘 작동
 
-<img src="/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/IMG_58C249A35675-1.jpeg" width = "50%" height = "50%">
+<img src="/assets/img/blog/dimensionality_reduction/IMG_58C249A35675-1.jpeg" width = "50%" height = "50%">
 
 ## 다른 차원 축소 기법
 
@@ -148,7 +148,7 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_9_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_9_0.png)
 
 
 
@@ -175,7 +175,7 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_10_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_10_0.png)
 
 
 
@@ -195,7 +195,7 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_11_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_11_0.png)
 
 
 
@@ -213,7 +213,7 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_12_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_12_0.png)
 
 
 
@@ -238,7 +238,7 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_13_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_13_0.png)
 
 
 
@@ -255,4 +255,4 @@ plt.show()
 ```
 
 
-![png](/Users/khj/Desktop/blog/Khyojung.github.io/assets/img/blog/dimensionality_reduction/output_14_0.png)
+![png](/assets/img/blog/dimensionality_reduction/output_14_0.png)
